@@ -1,5 +1,5 @@
 
-
+/*change la position du header*/
 
 * {
     margin: 0;
@@ -18,21 +18,7 @@ a {
 }
 
 
-.barl
-{
-	width: 656px;
-	height: 100%;
-	position: fixed;
-	background: rgba(227, 178, 174, 1);
-	/*background-color: #E3B2AE;*/
-	z-index:-1;
-}
-
-
 /*######################  Header     #########################*/
-
-
-
 .header
 {
 	/*background: yellow;*/
@@ -71,7 +57,7 @@ a {
 
 #social
 {
-
+	display:flex;
 	margin-top: 9px;
 }
 
@@ -91,7 +77,6 @@ a {
 	font-size: 17px;
 }
 
-
 #btn-menu>.fa-times
 {
 	float: right;
@@ -110,9 +95,6 @@ a {
 
 
 /*######################  Main     #########################*/
-
-
-/* ####  Le menu   ##### */
 
 
 #list-menu 
@@ -142,7 +124,7 @@ a {
 	/* background:red; */
 }
 #list-menu a {
-
+	/* margin-top: calc(50% - 20px/2 + 360px); */
     text-decoration: none;
     opacity: 0.3;
 }
@@ -168,8 +150,25 @@ a {
 }
 
 
+/*h2,
+h3 {
+    font-weight: 500;
+    line-height: 128%;
+}
 
-/*###  Contenu  ###*/
+h3 {
+    font-size: 1.25em;
+}
+
+h2 {
+    font-size: 1.625em;
+    margin: 1em 0 0.5625em 0;
+}
+
+
+main {
+    /*margin: 0 7.5em;
+    /*width: 100%;*/
 
 .container, .container1
 {
@@ -188,7 +187,13 @@ a {
 {
 	margin-top: 40px;
 }
-
+/*.contain::after
+{
+	content: " ";
+	position: absolute;
+	width: 1500px;
+	background: green;
+}*/
 .box, .box1
 {
 /*	background: grey;*/
@@ -278,7 +283,6 @@ a {
 	width: 50%;
 	color: grey;
 	text-decoration: underline;
-	text-underline-position: under;
 	/*background: green;*/
 }
 
@@ -293,8 +297,11 @@ a {
 	float: right;
 
 }
-
-
+/* .b>p::after */
+/* { */
+	/* content: "."; */
+	/* font-size: 50px; */
+/* } */
 .square
 {
 	width: 19%;
@@ -341,16 +348,17 @@ a {
 	align-items: center;
 	width: 95%;
 }
-
+/*.center>.square
+{
+	width: 100%;
+	height: 50%;
+}*/
 .content4>.center>.square>div
 {
 	width: 420px;
 	height: 420px;
 	background: rgba(0,0,0,0.25);
 }
-
-
-
 /* ####### La vidéo ###########  */
 
 #video-content {
@@ -372,8 +380,6 @@ a {
 	margin-bottom:25px;
 }
 
-
-/*#############   La NewslHEYtter  ######################*/
 
 button {
     padding: 0.625em 1em;
@@ -434,8 +440,7 @@ input {
 {
 	font-style: normal;
 	font-weight: 500;
-	color: none;
-	text-rendering: ;
+	font-family:;
 }
 .field
 {
@@ -447,12 +452,12 @@ input {
 }
 .heyletter-content 
 {
-   /* align-items: flex-end;
+  align-items: flex-end;
     margin: 0 auto;
     font-weight: 600;
-    font-size: 2em;*/
+    font-size: 2em;
     width: 100%;
-  /*  background: red;*/
+   /*background: red;*/
 }
 .follow
 {
@@ -471,7 +476,7 @@ input {
 {
     width: 100%;
     height: 60px;
-  /*  background: green;*/
+ /*   background: green;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,10 +485,15 @@ input {
 .bas>i:first-child {
     margin-right: 1.2em;
 }
-
-
-/*  #################################Le footer ###############################*/
-
+.barl
+{
+	width: 656px;
+	height: 100%;
+	position: fixed;
+	background: rgba(227, 178, 174, 1);
+	/*background-color: #E3B2AE;*/
+	z-index:-1;
+}
 .footer
 {
 	background:white;
@@ -501,18 +511,7 @@ input {
 	color:rgba(227, 178, 174, 1);
 }
 
-
-
-
-/*################# Le responsive ####################*/
-
-/* ################ taille de 960 ################### px*/
-
-
-
-
 @media only screen and (max-width:960px)
-
 {
 	.logo
 	{
@@ -527,7 +526,7 @@ input {
 		margin-left: 35px;
 	}
 
-	/*######################  Main 960    ##########*/
+	/*######################  Main     #########################*/
 
 
 	#list-menu 
@@ -576,6 +575,11 @@ input {
 	{
 		width: 370px;
 		height: 370px;
+	}
+	.box, .box1
+	{
+		/* background: grey; */
+		width: 85%;
 	}
 	.bloc-droit
 	{
@@ -642,61 +646,29 @@ input {
 		width: 426px;
 	}
 }
-
-
-
-/* ################ taille de 720 ################### px*/
-
-
-
-
 @media only screen and (max-width:720px)
-
-
 {
 	.logo
 	{
 		width: 48%;
-		margin-left: 70px;
 	}
 	#nav 
 	{
 		width: 60%;
-
 	}
 	.icon
 	{
-		margin-left: 120px;
+		margin-left: 35px;
 	}
 
+	/*######################  Main     #########################*/
 
-
-	#btn-menu
-	{
-	   /*background: red; */
-	  width: 50%;
-	  margin-top: 15px;
-	 margin-right: -60px;
-	}
-	#btn-menu>.fa-bars
-	{
-		float: right;
-		font-size: 17px;
-	}
-
-
-	#btn-menu>.fa-times
-	{
-		float: right;
-		font-size: 17px;
-	}
 
 	#list-menu 
 	{
 		margin-top: 55px;
-		margin-right: -100px;
 		height: 100%;
-		width: 390px;
+		width: 435px;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -723,8 +695,6 @@ input {
 		/* background: green; */
 		margin-left: 5px;
 	}
-
-
 	#big-content
 	{
 		margin-bottom: 45px;
@@ -733,18 +703,23 @@ input {
 	}
 	#big-content>div>img
 	{
-		width: 336px;
-		height: 336px;
+		width: 290px;
+		height: 290px;
 	}
 	#video-content>div>img
 	{
-		width: 336px;
-		height: 336px;
+		width: 300px;
+		height: 300px;
 	}
 	.bloc-droit
 	{
 		/* background:orange; */
-		margin-left: 100px;
+		margin-left: 55px;
+	}
+	.box, .box1
+	{
+	/*	background: grey;*/
+		width: 90%;
 	}
 	.content,.content1,.content2,.content3,.content5,.content6,.content7,.content8
 	{
@@ -753,7 +728,7 @@ input {
 	}
 	.article
 	{
-		width: 73%;
+		width: 70%;
 		/* background: blue; */
 		margin: 8px 0;
 		margin-left: 5px;
@@ -778,18 +753,18 @@ input {
 	.center>.article
 	{
 		width: 98%;
-		/*background: green;*/
+		/* background: green; */
 		margin: 0;
 		margin-bottom: 15px;
 	}
 	.content4>.center>div>.title
 	{
-		/*background: orange;*/
+		/* background: orange; */
 		width: 95%;
 	}
 	.content4>.center>div>.text
 	{
-		/*background: yellow;*/
+		/* background: yellow; */
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -803,29 +778,198 @@ input {
 	}
 	.barl
 	{
-		width: 370px;
+		width: 300px;
+	}
+}
+@media only screen and (max-width:560px)
+{
+	.fixed
+	{
+		/* background: orange; */
+		width: 90%;
+		margin-top: 0px;
+	}
+	#nav 
+	{
+		width: 54.6%;
+		display:flex;
+		/* background: green; */
+	}
+	#btn-menu
+	{
+	  margin-top: 30px;
+	}
+	#btn-menu>.fa-bars
+	{
+		float: right;
+		/* margin-right:7px; */
+		font-size: 18px;
+	}
+	.logo
+	{
+		width: 48%;
+	}
+	.logo>img
+	{
+		height:100px;
+		width:100px;
+	}
+	#nav 
+	{
+		width: 60%;
+	}
+	.icon
+	{
+		margin-left: 35px;
+		visibility:hidden;
 	}
 
-	.newsletter 
-{
-	width: 100%;
-	/*margin-right: -100px;*/
- 	/*background: blue;*/
- 	position: relative;
-	right:0;
-	left:0;
+	/*######################  Main     #########################*/
 
-}
 
-.heyletter
-{
-	width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: hsl(60, 100%, 79%);
-    margin-bottom: 25px;
-}
-
+	#list-menu 
+	{
+		margin-top: 55px;
+		height: 100%;
+		width: 435px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: none;
+		background: #FFFFFF ;
+		/* background:orange; */
+	}
+	#list-menu ul {
+		margin-top: 45px;
+		height: 40%;
+		justify-content: space-around;
+	}
+	#big-content2
+	{
+		display: none;
+	}
+	#video-content2
+	{
+		display: none;
+	}
+	#bloc-gauche
+	{
+		width: 100%;
+		/* background: green; */
+		margin-left:0px;
+		/* margin-top:50px; */
+	}
+	#big-content
+	{
+		margin-bottom: 45px;
+		/* position:relative; */
+		/* top:1px; */
+	}
+	#big-content>div>img
+	{
+		width: 368px;
+		height: 368px;
+		
+	}
+	#big-content>div>h2
+	{
+		font-size:19px;
+	}
+	#big-content>div
+	{
+		/* background:yellow; */
+		margin:0px 25px;
+	}
+	#big-content>a
+	{
+		margin-left:25px;
+	}
+	#video-content>div>img
+	{
+		width: 368px;
+		height: 368px;
+	}
+	#video-content>div, #video-content>span
+	{
+		/* background:yellow; */
+		margin:0px 25px;
+	}
+	.bloc
+	{
+		display:block;
+		/* background:magenta; */
+	}
+	.bloc-droit
+	{
+		width: 95%;
+		margin-top:50px;
+		/* background:orange; */
+		margin-left: 25px;
+	}
+	.box, .box1
+	{
+		/* background: grey; */
+		width: 73%;
+	}
+	.content,.content1,.content2,.content3,.content5,.content6,.content7,.content8
+	{
+		margin-top: 1px;
+		margin-bottom:20px;
+	}
+	.article
+	{
+		width: 70%;
+		/* background: blue; */
+		margin: 8px 0;
+		margin-left: 5px;
+	}
+	.title
+	{
+		margin-bottom: 9px;
+	}
+	.title>p
+	{
+		font-size: 17px;
+	}
+	.square>div
+	{
+		width: 104px;
+		height: 95px;
+	}
+	.center
+	{
+		margin: 0;
+	}
+	.center>.article
+	{
+		width: 98%;
+		/* background: green; */
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.content4>.center>div>.title
+	{
+		/* background: orange; */
+		width: 95%;
+	}
+	.content4>.center>div>.text
+	{
+		/* background: yellow; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 95%;
+	}
+	.content4>.center>.square>div
+	{
+		width: 368px;
+		height: 368px;
+		background: rgba(0,0,0,0.25);
+		/* background:green; */
+	}
+	.barl
+	{
+		width: 100%;
+		height:850px;
+	}
 }
